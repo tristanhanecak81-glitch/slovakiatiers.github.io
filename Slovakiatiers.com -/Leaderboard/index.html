@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlovakiaTiers - Slovakia Minecraft PvP Leaderboard</title>
+    <meta name="description" content="SlovakiaTiers.com - Official Slovak Minecraft PvP tier list and leaderboard. Track the best players, ranks, regions and tiers." />
+    <meta name="keywords" content="SlovakiaTiers, Slovakiatiers.com, Minecraft PvP, PvP leaderboard, Slovak Minecraft, Minecraft tiers" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://slovakiatiers.com/" />
+    <meta property="og:title" content="SlovakiaTiers - Slovakia Minecraft PvP Leaderboard" />
+    <meta property="og:description" content="Official Slovak Minecraft PvP tier list with player rankings, regions and tiers." />
+    <meta property="og:url" content="https://slovakiatiers.com/" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>SlovakiaTiers</h1>
+        <p>Official Slovak Minecraft PvP Tier List</p>
+        <p class="site-link"><a href="https://slovakiatiers.com" target="_blank" rel="noopener noreferrer">https://slovakiatiers.com</a></p>
+        <div class="nav-buttons">
+            <button class="nav-btn active">Leaderboard</button>
+            <button class="nav-btn">Players</button>
+            <button class="nav-btn">Tiers</button>
+            <button class="nav-btn" id="export-btn">Export</button>
+        </div>
+        <div class="search-wrapper">
+            <input type="text" class="search-input" placeholder="Vyhľadaj hráča..." />
+            <span class="search-indicator">/</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section-tabs-wrapper">
+            <div class="section-tabs">
+                <div class="tab active"><span class="tab-icon">🏆</span>Overall</div>
+                <div class="tab"><span class="tab-icon">⚔️</span>LTMs</div>
+                <div class="tab"><span class="tab-icon">🪓</span>Vanilla</div>
+                <div class="tab"><span class="tab-icon">❤️</span>UHC</div>
+                <div class="tab"><span class="tab-icon">⚗️</span>Pot</div>
+                <div class="tab"><span class="tab-icon">💜</span>NethOP</div>
+                <div class="tab"><span class="tab-icon">🌐</span>SMP</div>
+                <div class="tab"><span class="tab-icon">🗡️</span>Sword</div>
+                <div class="tab"><span class="tab-icon">🪓</span>Axe</div>
+                <div class="tab"><span class="tab-icon">🔨</span>Mace</div>
+            </div>
+            <div class="section-cta">
+                <button class="info-btn">Information</button>
+                <div class="server-pill">
+                    <span>SERVER IP</span>
+                    <strong id="server-ip-value">mcpvp.club</strong>
+                </div>
+            </div>
+        </div>
+        <div class="leaderboard">
+            <div class="leaderboard-header">
+                <div class="player">PLAYER</div>
+                <div class="region">REGION</div>
+                <div class="tiers">TIERS</div>
+            </div>
+            
+            <div id="leaderboard-list"></div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
